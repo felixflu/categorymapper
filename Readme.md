@@ -1,1 +1,1 @@
-§# category mapper
+# category mapper
