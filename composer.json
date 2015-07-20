@@ -1,7 +1,10 @@
 {
   "require": {
     "doctrine/orm": "2.4.*",
-    "symfony/yaml": "2.*"
+    "symfony/yaml": "2.*",
+    "symfony/dependency-injection": "*",
+    "symfony/config": "*"
+
   },
   "autoload": {
     "psr-0": {"": "src/"}
