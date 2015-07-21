@@ -7,7 +7,7 @@ require_once "vendor/autoload.php";
 // Create a simple "default" Doctrine ORM configuration for Annotations
 $isDevMode = true;
 //$config = Setup::createAnnotationMetadataConfiguration(array(__DIR__."/src"), $isDevMode);
-$paths = array(__DIR__ . "/config/yml");
+$paths = array(__DIR__ . "/config/orm");
 $config = Setup::createYAMLMetadataConfiguration($paths, $isDevMode);
 
 // make doctrine read only tables i want
@@ -23,7 +23,7 @@ $conn = array(
     'host' => 'localhost',
     'user'     => 'root',
     'password' => 'root',
-    'dbname'   => 'session',
+    'dbname'   => 'ce_db_with_demodata',
 
 );
 

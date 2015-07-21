@@ -1,0 +1,312 @@
+Oxcategories:
+    type: entity
+    table: oxcategories
+    indexes:
+        OXROOTID:
+            columns:
+                - OXROOTID
+        OXPARENTID:
+            columns:
+                - OXPARENTID
+        OXPRICEFROM:
+            columns:
+                - OXPRICEFROM
+        OXPRICETO:
+            columns:
+                - OXPRICETO
+        OXHIDDEN:
+            columns:
+                - OXHIDDEN
+        OXSHOPID:
+            columns:
+                - OXSHOPID
+        OXSORT:
+            columns:
+                - OXSORT
+        OXVAT:
+            columns:
+                - OXVAT
+    id:
+        oxid:
+            type: string
+            nullable: false
+            length: 32
+            fixed: true
+            comment: 'Category id'
+            id: true
+            column: OXID
+            generator:
+                strategy: IDENTITY
+    fields:
+        oxparentid:
+            type: string
+            nullable: false
+            length: 32
+            fixed: true
+            comment: 'Parent category id'
+            default: oxrootid
+            column: OXPARENTID
+        oxleft:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: 'Used for building category tree'
+            default: '0'
+            column: OXLEFT
+        oxright:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: 'Used for building category tree'
+            default: '0'
+            column: OXRIGHT
+        oxrootid:
+            type: string
+            nullable: false
+            length: 32
+            fixed: true
+            comment: 'Root category id'
+            default: ''
+            column: OXROOTID
+        oxsort:
+            type: integer
+            nullable: false
+            unsigned: false
+            comment: Sorting
+            default: '9999'
+            column: OXSORT
+        oxactive:
+            type: boolean
+            nullable: false
+            comment: 'Active (multilanguage)'
+            default: '1'
+            column: OXACTIVE
+        oxhidden:
+            type: boolean
+            nullable: false
+            comment: 'Hidden (Can be accessed by direct link, but is not visible in lists and menu)'
+            default: '0'
+            column: OXHIDDEN
+        oxshopid:
+            type: string
+            nullable: false
+            length: 32
+            fixed: false
+            comment: 'Shop id (oxshops)'
+            default: ''
+            column: OXSHOPID
+        oxtitle:
+            type: string
+            nullable: false
+            length: 254
+            fixed: false
+            comment: 'Title (multilanguage)'
+            default: ''
+            column: OXTITLE
+        oxdesc:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: 'Description (multilanguage)'
+            default: ''
+            column: OXDESC
+        oxlongdesc:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            comment: 'Long description (multilanguage)'
+            column: OXLONGDESC
+        oxthumb:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: 'Thumbnail filename (multilanguage)'
+            default: ''
+            column: OXTHUMB
+        oxthumb1:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            default: ''
+            column: OXTHUMB_1
+        oxthumb2:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            default: ''
+            column: OXTHUMB_2
+        oxthumb3:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            default: ''
+            column: OXTHUMB_3
+        oxextlink:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            comment: 'External link, that if specified is opened instead of category content'
+            default: ''
+            column: OXEXTLINK
+        oxtemplate:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: 'Alternative template filename (if empty, default is used)'
+            default: ''
+            column: OXTEMPLATE
+        oxdefsort:
+            type: string
+            nullable: false
+            length: 64
+            fixed: false
+            comment: 'Default field for sorting of articles in this category (most of oxarticles fields)'
+            default: ''
+            column: OXDEFSORT
+        oxdefsortmode:
+            type: boolean
+            nullable: false
+            comment: 'Default mode of sorting of articles in this category (0 - asc, 1 - desc)'
+            default: '0'
+            column: OXDEFSORTMODE
+        oxpricefrom:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: 'If specified, all articles, with price higher than specified, will be shown in this category'
+            default: '0'
+            column: OXPRICEFROM
+        oxpriceto:
+            type: float
+            nullable: false
+            precision: 10
+            scale: 0
+            comment: 'If specified, all articles, with price lower than specified, will be shown in this category'
+            default: '0'
+            column: OXPRICETO
+        oxactive1:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OXACTIVE_1
+        oxtitle1:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: OXTITLE_1
+        oxdesc1:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: OXDESC_1
+        oxlongdesc1:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            column: OXLONGDESC_1
+        oxactive2:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OXACTIVE_2
+        oxtitle2:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: OXTITLE_2
+        oxdesc2:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: OXDESC_2
+        oxlongdesc2:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            column: OXLONGDESC_2
+        oxactive3:
+            type: boolean
+            nullable: false
+            default: '0'
+            column: OXACTIVE_3
+        oxtitle3:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: OXTITLE_3
+        oxdesc3:
+            type: string
+            nullable: false
+            length: 255
+            fixed: false
+            default: ''
+            column: OXDESC_3
+        oxlongdesc3:
+            type: text
+            nullable: false
+            length: 65535
+            fixed: false
+            column: OXLONGDESC_3
+        oxicon:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: 'Icon filename'
+            default: ''
+            column: OXICON
+        oxpromoicon:
+            type: string
+            nullable: false
+            length: 128
+            fixed: false
+            comment: 'Promotion icon filename'
+            default: ''
+            column: OXPROMOICON
+        oxvat:
+            type: float
+            nullable: true
+            precision: 10
+            scale: 0
+            comment: 'VAT, used for articles in this category (only if oxarticles.oxvat is not set)'
+            column: OXVAT
+        oxskipdiscounts:
+            type: boolean
+            nullable: false
+            comment: 'Skip all negative Discounts for articles in this category (Discounts, Vouchers, Delivery ...) '
+            default: '0'
+            column: OXSKIPDISCOUNTS
+        oxshowsuffix:
+            type: boolean
+            nullable: false
+            comment: 'Show SEO Suffix in Category'
+            default: '1'
+            column: OXSHOWSUFFIX
+        oxtimestamp:
+            type: datetime
+            nullable: false
+            comment: Timestamp
+            default: CURRENT_TIMESTAMP
+            column: OXTIMESTAMP
+    lifecycleCallbacks: {  }
