@@ -1,7 +1,4 @@
 <?php
-/**
- * #PHPHEADER_OXID_ESHOP_ADMIN#
- */
 
 namespace src\tests\unit;
 
