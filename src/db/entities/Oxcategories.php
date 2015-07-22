@@ -1,7 +1,5 @@
 <?php
 
-
-
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -9,6 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Oxcategories
 {
+
     /**
      * @var string
      */
@@ -209,11 +208,10 @@ class Oxcategories
      */
     private $oxtimestamp;
 
-
     /**
      * Get oxid
      *
-     * @return string 
+     * @return string
      */
     public function getOxid()
     {
@@ -221,9 +219,24 @@ class Oxcategories
     }
 
     /**
+     * Set oxid
+     *
+     * @param string $oxId The id.
+     *
+     * @return Oxcategories
+     */
+    public function setOxid($oxId)
+    {
+        $this->oxid = $oxId;
+
+        return $this;
+    }
+
+    /**
      * Set oxparentid
      *
      * @param string $oxparentid
+     *
      * @return Oxcategories
      */
     public function setOxparentid($oxparentid)
@@ -236,7 +249,7 @@ class Oxcategories
     /**
      * Get oxparentid
      *
-     * @return string 
+     * @return string
      */
     public function getOxparentid()
     {
@@ -247,6 +260,7 @@ class Oxcategories
      * Set oxleft
      *
      * @param integer $oxleft
+     *
      * @return Oxcategories
      */
     public function setOxleft($oxleft)
@@ -259,7 +273,7 @@ class Oxcategories
     /**
      * Get oxleft
      *
-     * @return integer 
+     * @return integer
      */
     public function getOxleft()
     {
@@ -270,6 +284,7 @@ class Oxcategories
      * Set oxright
      *
      * @param integer $oxright
+     *
      * @return Oxcategories
      */
     public function setOxright($oxright)
@@ -282,7 +297,7 @@ class Oxcategories
     /**
      * Get oxright
      *
-     * @return integer 
+     * @return integer
      */
     public function getOxright()
     {
@@ -293,6 +308,7 @@ class Oxcategories
      * Set oxrootid
      *
      * @param string $oxrootid
+     *
      * @return Oxcategories
      */
     public function setOxrootid($oxrootid)
@@ -305,7 +321,7 @@ class Oxcategories
     /**
      * Get oxrootid
      *
-     * @return string 
+     * @return string
      */
     public function getOxrootid()
     {
@@ -316,6 +332,7 @@ class Oxcategories
      * Set oxsort
      *
      * @param integer $oxsort
+     *
      * @return Oxcategories
      */
     public function setOxsort($oxsort)
@@ -328,7 +345,7 @@ class Oxcategories
     /**
      * Get oxsort
      *
-     * @return integer 
+     * @return integer
      */
     public function getOxsort()
     {
@@ -339,6 +356,7 @@ class Oxcategories
      * Set oxactive
      *
      * @param boolean $oxactive
+     *
      * @return Oxcategories
      */
     public function setOxactive($oxactive)
@@ -351,7 +369,7 @@ class Oxcategories
     /**
      * Get oxactive
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxactive()
     {
@@ -362,6 +380,7 @@ class Oxcategories
      * Set oxhidden
      *
      * @param boolean $oxhidden
+     *
      * @return Oxcategories
      */
     public function setOxhidden($oxhidden)
@@ -374,7 +393,7 @@ class Oxcategories
     /**
      * Get oxhidden
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxhidden()
     {
@@ -385,6 +404,7 @@ class Oxcategories
      * Set oxshopid
      *
      * @param string $oxshopid
+     *
      * @return Oxcategories
      */
     public function setOxshopid($oxshopid)
@@ -397,7 +417,7 @@ class Oxcategories
     /**
      * Get oxshopid
      *
-     * @return string 
+     * @return string
      */
     public function getOxshopid()
     {
@@ -408,6 +428,7 @@ class Oxcategories
      * Set oxtitle
      *
      * @param string $oxtitle
+     *
      * @return Oxcategories
      */
     public function setOxtitle($oxtitle)
@@ -420,7 +441,7 @@ class Oxcategories
     /**
      * Get oxtitle
      *
-     * @return string 
+     * @return string
      */
     public function getOxtitle()
     {
@@ -431,6 +452,7 @@ class Oxcategories
      * Set oxdesc
      *
      * @param string $oxdesc
+     *
      * @return Oxcategories
      */
     public function setOxdesc($oxdesc)
@@ -443,7 +465,7 @@ class Oxcategories
     /**
      * Get oxdesc
      *
-     * @return string 
+     * @return string
      */
     public function getOxdesc()
     {
@@ -454,6 +476,7 @@ class Oxcategories
      * Set oxlongdesc
      *
      * @param string $oxlongdesc
+     *
      * @return Oxcategories
      */
     public function setOxlongdesc($oxlongdesc)
@@ -466,7 +489,7 @@ class Oxcategories
     /**
      * Get oxlongdesc
      *
-     * @return string 
+     * @return string
      */
     public function getOxlongdesc()
     {
@@ -477,6 +500,7 @@ class Oxcategories
      * Set oxthumb
      *
      * @param string $oxthumb
+     *
      * @return Oxcategories
      */
     public function setOxthumb($oxthumb)
@@ -489,7 +513,7 @@ class Oxcategories
     /**
      * Get oxthumb
      *
-     * @return string 
+     * @return string
      */
     public function getOxthumb()
     {
@@ -500,6 +524,7 @@ class Oxcategories
      * Set oxthumb1
      *
      * @param string $oxthumb1
+     *
      * @return Oxcategories
      */
     public function setOxthumb1($oxthumb1)
@@ -512,7 +537,7 @@ class Oxcategories
     /**
      * Get oxthumb1
      *
-     * @return string 
+     * @return string
      */
     public function getOxthumb1()
     {
@@ -523,6 +548,7 @@ class Oxcategories
      * Set oxthumb2
      *
      * @param string $oxthumb2
+     *
      * @return Oxcategories
      */
     public function setOxthumb2($oxthumb2)
@@ -535,7 +561,7 @@ class Oxcategories
     /**
      * Get oxthumb2
      *
-     * @return string 
+     * @return string
      */
     public function getOxthumb2()
     {
@@ -546,6 +572,7 @@ class Oxcategories
      * Set oxthumb3
      *
      * @param string $oxthumb3
+     *
      * @return Oxcategories
      */
     public function setOxthumb3($oxthumb3)
@@ -558,7 +585,7 @@ class Oxcategories
     /**
      * Get oxthumb3
      *
-     * @return string 
+     * @return string
      */
     public function getOxthumb3()
     {
@@ -569,6 +596,7 @@ class Oxcategories
      * Set oxextlink
      *
      * @param string $oxextlink
+     *
      * @return Oxcategories
      */
     public function setOxextlink($oxextlink)
@@ -581,7 +609,7 @@ class Oxcategories
     /**
      * Get oxextlink
      *
-     * @return string 
+     * @return string
      */
     public function getOxextlink()
     {
@@ -592,6 +620,7 @@ class Oxcategories
      * Set oxtemplate
      *
      * @param string $oxtemplate
+     *
      * @return Oxcategories
      */
     public function setOxtemplate($oxtemplate)
@@ -604,7 +633,7 @@ class Oxcategories
     /**
      * Get oxtemplate
      *
-     * @return string 
+     * @return string
      */
     public function getOxtemplate()
     {
@@ -615,6 +644,7 @@ class Oxcategories
      * Set oxdefsort
      *
      * @param string $oxdefsort
+     *
      * @return Oxcategories
      */
     public function setOxdefsort($oxdefsort)
@@ -627,7 +657,7 @@ class Oxcategories
     /**
      * Get oxdefsort
      *
-     * @return string 
+     * @return string
      */
     public function getOxdefsort()
     {
@@ -638,6 +668,7 @@ class Oxcategories
      * Set oxdefsortmode
      *
      * @param boolean $oxdefsortmode
+     *
      * @return Oxcategories
      */
     public function setOxdefsortmode($oxdefsortmode)
@@ -650,7 +681,7 @@ class Oxcategories
     /**
      * Get oxdefsortmode
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxdefsortmode()
     {
@@ -661,6 +692,7 @@ class Oxcategories
      * Set oxpricefrom
      *
      * @param float $oxpricefrom
+     *
      * @return Oxcategories
      */
     public function setOxpricefrom($oxpricefrom)
@@ -673,7 +705,7 @@ class Oxcategories
     /**
      * Get oxpricefrom
      *
-     * @return float 
+     * @return float
      */
     public function getOxpricefrom()
     {
@@ -684,6 +716,7 @@ class Oxcategories
      * Set oxpriceto
      *
      * @param float $oxpriceto
+     *
      * @return Oxcategories
      */
     public function setOxpriceto($oxpriceto)
@@ -696,7 +729,7 @@ class Oxcategories
     /**
      * Get oxpriceto
      *
-     * @return float 
+     * @return float
      */
     public function getOxpriceto()
     {
@@ -707,6 +740,7 @@ class Oxcategories
      * Set oxactive1
      *
      * @param boolean $oxactive1
+     *
      * @return Oxcategories
      */
     public function setOxactive1($oxactive1)
@@ -719,7 +753,7 @@ class Oxcategories
     /**
      * Get oxactive1
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxactive1()
     {
@@ -730,6 +764,7 @@ class Oxcategories
      * Set oxtitle1
      *
      * @param string $oxtitle1
+     *
      * @return Oxcategories
      */
     public function setOxtitle1($oxtitle1)
@@ -742,7 +777,7 @@ class Oxcategories
     /**
      * Get oxtitle1
      *
-     * @return string 
+     * @return string
      */
     public function getOxtitle1()
     {
@@ -753,6 +788,7 @@ class Oxcategories
      * Set oxdesc1
      *
      * @param string $oxdesc1
+     *
      * @return Oxcategories
      */
     public function setOxdesc1($oxdesc1)
@@ -765,7 +801,7 @@ class Oxcategories
     /**
      * Get oxdesc1
      *
-     * @return string 
+     * @return string
      */
     public function getOxdesc1()
     {
@@ -776,6 +812,7 @@ class Oxcategories
      * Set oxlongdesc1
      *
      * @param string $oxlongdesc1
+     *
      * @return Oxcategories
      */
     public function setOxlongdesc1($oxlongdesc1)
@@ -788,7 +825,7 @@ class Oxcategories
     /**
      * Get oxlongdesc1
      *
-     * @return string 
+     * @return string
      */
     public function getOxlongdesc1()
     {
@@ -799,6 +836,7 @@ class Oxcategories
      * Set oxactive2
      *
      * @param boolean $oxactive2
+     *
      * @return Oxcategories
      */
     public function setOxactive2($oxactive2)
@@ -811,7 +849,7 @@ class Oxcategories
     /**
      * Get oxactive2
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxactive2()
     {
@@ -822,6 +860,7 @@ class Oxcategories
      * Set oxtitle2
      *
      * @param string $oxtitle2
+     *
      * @return Oxcategories
      */
     public function setOxtitle2($oxtitle2)
@@ -834,7 +873,7 @@ class Oxcategories
     /**
      * Get oxtitle2
      *
-     * @return string 
+     * @return string
      */
     public function getOxtitle2()
     {
@@ -845,6 +884,7 @@ class Oxcategories
      * Set oxdesc2
      *
      * @param string $oxdesc2
+     *
      * @return Oxcategories
      */
     public function setOxdesc2($oxdesc2)
@@ -857,7 +897,7 @@ class Oxcategories
     /**
      * Get oxdesc2
      *
-     * @return string 
+     * @return string
      */
     public function getOxdesc2()
     {
@@ -868,6 +908,7 @@ class Oxcategories
      * Set oxlongdesc2
      *
      * @param string $oxlongdesc2
+     *
      * @return Oxcategories
      */
     public function setOxlongdesc2($oxlongdesc2)
@@ -880,7 +921,7 @@ class Oxcategories
     /**
      * Get oxlongdesc2
      *
-     * @return string 
+     * @return string
      */
     public function getOxlongdesc2()
     {
@@ -891,6 +932,7 @@ class Oxcategories
      * Set oxactive3
      *
      * @param boolean $oxactive3
+     *
      * @return Oxcategories
      */
     public function setOxactive3($oxactive3)
@@ -903,7 +945,7 @@ class Oxcategories
     /**
      * Get oxactive3
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxactive3()
     {
@@ -914,6 +956,7 @@ class Oxcategories
      * Set oxtitle3
      *
      * @param string $oxtitle3
+     *
      * @return Oxcategories
      */
     public function setOxtitle3($oxtitle3)
@@ -926,7 +969,7 @@ class Oxcategories
     /**
      * Get oxtitle3
      *
-     * @return string 
+     * @return string
      */
     public function getOxtitle3()
     {
@@ -937,6 +980,7 @@ class Oxcategories
      * Set oxdesc3
      *
      * @param string $oxdesc3
+     *
      * @return Oxcategories
      */
     public function setOxdesc3($oxdesc3)
@@ -949,7 +993,7 @@ class Oxcategories
     /**
      * Get oxdesc3
      *
-     * @return string 
+     * @return string
      */
     public function getOxdesc3()
     {
@@ -960,6 +1004,7 @@ class Oxcategories
      * Set oxlongdesc3
      *
      * @param string $oxlongdesc3
+     *
      * @return Oxcategories
      */
     public function setOxlongdesc3($oxlongdesc3)
@@ -972,7 +1017,7 @@ class Oxcategories
     /**
      * Get oxlongdesc3
      *
-     * @return string 
+     * @return string
      */
     public function getOxlongdesc3()
     {
@@ -983,6 +1028,7 @@ class Oxcategories
      * Set oxicon
      *
      * @param string $oxicon
+     *
      * @return Oxcategories
      */
     public function setOxicon($oxicon)
@@ -995,7 +1041,7 @@ class Oxcategories
     /**
      * Get oxicon
      *
-     * @return string 
+     * @return string
      */
     public function getOxicon()
     {
@@ -1006,6 +1052,7 @@ class Oxcategories
      * Set oxpromoicon
      *
      * @param string $oxpromoicon
+     *
      * @return Oxcategories
      */
     public function setOxpromoicon($oxpromoicon)
@@ -1018,7 +1065,7 @@ class Oxcategories
     /**
      * Get oxpromoicon
      *
-     * @return string 
+     * @return string
      */
     public function getOxpromoicon()
     {
@@ -1029,6 +1076,7 @@ class Oxcategories
      * Set oxvat
      *
      * @param float $oxvat
+     *
      * @return Oxcategories
      */
     public function setOxvat($oxvat)
@@ -1041,7 +1089,7 @@ class Oxcategories
     /**
      * Get oxvat
      *
-     * @return float 
+     * @return float
      */
     public function getOxvat()
     {
@@ -1052,6 +1100,7 @@ class Oxcategories
      * Set oxskipdiscounts
      *
      * @param boolean $oxskipdiscounts
+     *
      * @return Oxcategories
      */
     public function setOxskipdiscounts($oxskipdiscounts)
@@ -1064,7 +1113,7 @@ class Oxcategories
     /**
      * Get oxskipdiscounts
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxskipdiscounts()
     {
@@ -1075,6 +1124,7 @@ class Oxcategories
      * Set oxshowsuffix
      *
      * @param boolean $oxshowsuffix
+     *
      * @return Oxcategories
      */
     public function setOxshowsuffix($oxshowsuffix)
@@ -1087,7 +1137,7 @@ class Oxcategories
     /**
      * Get oxshowsuffix
      *
-     * @return boolean 
+     * @return boolean
      */
     public function getOxshowsuffix()
     {
@@ -1098,6 +1148,7 @@ class Oxcategories
      * Set oxtimestamp
      *
      * @param \DateTime $oxtimestamp
+     *
      * @return Oxcategories
      */
     public function setOxtimestamp($oxtimestamp)
@@ -1110,7 +1161,7 @@ class Oxcategories
     /**
      * Get oxtimestamp
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getOxtimestamp()
     {

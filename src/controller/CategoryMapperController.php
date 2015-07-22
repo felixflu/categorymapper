@@ -6,6 +6,7 @@
 namespace src\controller;
 
 use oxAdminView;
+use src\services\CategoryService;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
@@ -17,6 +18,8 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
  */
 class CategoryMapperController extends OxAdminView
 {
+
+    protected $categories = array();
 
     /**
      * @var string The template of the controller.
@@ -30,10 +33,20 @@ class CategoryMapperController extends OxAdminView
     {
         parent::render();
 
-        $dic    = new ContainerBuilder();
-        $loader = new YamlFileLoader($dic, new FileLocator(__DIR__));
-        $loader->load('services.yml');
+        $categoryService  = new CategoryService();
+        $this->categories = $categoryService->getAllCategories();
+
 
         return $this->_sThisTemplate;
+    }
+
+    /**
+     * Getter for property.
+     *
+     * @return array
+     */
+    public function getCategories()
+    {
+        return $this->categories;
     }
 }
